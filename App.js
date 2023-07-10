@@ -1,29 +1,42 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* use stylesheet Object :: recommended */}
-      <Text style={styles.dummyText}>Hello World!</Text>
-      {/* inline styling :: not recommended */}
-      <Text style={{ margin: 16, borderWidth: 2, borderColor: 'red', padding: 16 }}>New Text</Text>
-      <Button title='Tap me!' />
+    <View style={styles.appContainer}>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.textInput} placeholder='Your course goal!' />
+        <Button title='Add Goal' />
+      </View>
+      <View style={styles.goalsContainer}>
+        <Text>List of goals...</Text>
+      </View>
     </View>
   );
 }
 
-// StyleSheet Object :: style 재사용성이 증가
 const styles = StyleSheet.create({
-  container: {
+  appContainer: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 60,
+    paddingHorizontal: 16,
   },
-  dummyText: {
-    margin: 16,
-    padding: 16,
-    borderWidth: 2,
-    borderColor: 'red',
+  inputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 24,
+    borderBottomWidth: 1,
+    borderBottomColor: '#cccccc',
+  },
+  textInput: {
+    borderWidth: 1,
+    borderColor: '#cccccc',
+    width: '70%',
+    marginRight: 8,
+    padding: 8,
+  },
+  goalsContainer: {
+    flex: 5,
   },
 });
