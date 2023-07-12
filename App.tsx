@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
-export default function App() {
-  const [enteredGoalText, setEnteredGoalText] = useState('');
-  const [courseGoals, setCourseGoals] = useState([]);
+const App = () => {
+  const [enteredGoalText, setEnteredGoalText] = useState<string>('');
+  const [courseGoals, setCourseGoals] = useState<string[]>([]);
 
-  function handleChange(e) {
+  function handleChange(e: string): void {
     setEnteredGoalText(e);
   }
 
-  function handlePress() {
+  function handlePress(): void {
     setCourseGoals((prev) => [...prev, enteredGoalText]);
   }
 
@@ -30,7 +30,7 @@ export default function App() {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   appContainer: {
@@ -58,3 +58,5 @@ const styles = StyleSheet.create({
     flex: 5,
   },
 });
+
+export default App;
