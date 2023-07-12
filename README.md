@@ -6,6 +6,8 @@ React Native를 공부하고, 그 결과물을 저장하는 Repository
 
 ## 공부 진행사항
 
+링크 클릭시 블로그 포스트로 이동합니다.
+
 - 2023.07.09. [Core Component](https://rosenfence.tistory.com/30)
 - 2023.07.10. [Styling](https://rosenfence.tistory.com/31)
 - 2023.07.11. [Layout(used flexbox)](https://rosenfence.tistory.com/32)
