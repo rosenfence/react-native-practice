@@ -13,6 +13,8 @@ React Native를 공부하고, 그 결과물을 저장하는 Repository
 - 2023.07.11. [Layout(used flexbox)](https://rosenfence.tistory.com/32)
 - 2023.07.12. [Event Listener](https://rosenfence.tistory.com/33)
 - 2023.07.13. [Add TypeScirpt](https://rosenfence.tistory.com/34)
+- 2023.07.14. [iOS & Android Styling diffrence](https://rosenfence.tistory.com/35)
+- 2023.07.15. [Use ScrollView](https://rosenfence.tistory.com/36)
 
 ## 관련 링크
 
